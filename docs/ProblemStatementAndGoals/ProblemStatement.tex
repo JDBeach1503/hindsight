@@ -2,6 +2,9 @@
 
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
 
 \title{Problem Statement and Goals\\\progname}
 
@@ -16,18 +19,20 @@
 
 \maketitle
 
+\newpage{}
+
 \begin{table}[hp]
 \caption{Revision History} \label{TblRevisionHistory}
 \begin{tabularx}{\textwidth}{llX}
 \toprule
 \textbf{Date} & \textbf{Developer(s)} & \textbf{Change}\\
 \midrule
-Date1 & Name(s) & Description of changes\\
-Date2 & Name(s) & Description of changes\\
-... & ... & ...\\
+2026/09/24 & Mohammad Bilal & Completed sections 1.1, 4, \& reflection \\
 \bottomrule
 \end{tabularx}
 \end{table}
+
+\newpage{}
 
 \section{Problem Statement}
 
@@ -40,11 +45,15 @@ information.}
 
 \subsection{Problem}
 
-\wss{What problem are you trying to solve?  Why is it important? Do not talk
-about how you will solve the problem, only what the problem is.  AI is rarely
-part of the problem.  The problem is ``what'' you want to do, not ``how'' you
-want to do it.  The problem statement should be written in a way that is
-understandable to a non-technical audience.}
+Paediatric ophthalmology appointments can be stressful and unfamiliar for children.
+Procedures such as vision testing, eye drops, and slit-lamp examinations may cause anxiety, particularly when children do not know what to expect.
+This anxiety can make it difficult to cooperate during examinations, potentially affecting the quality and completeness of clinical assessments.
+For example, a study of 298 children undergoing cycloplegic eye examinations found that 26\% experienced significant distress before receiving eye drops,
+while uncooperative children were also more anxious and required more time to complete the examination \cite{ChiaEtAl2015}.
+
+Children and their families therefore need adequate preparation for common ophthalmology procedures before attending an appointment.
+Without appropriate preparation, unfamiliar clinical experiences may contribute to increased anxiety, reduced cooperation, and longer or more difficult appointments.
+This project addresses the need for an accessible, child-friendly way to help children become more familiar and comfortable with the paediatric ophthalmology experience.
 
 \subsection{Inputs and Outputs}
 
@@ -67,33 +76,58 @@ scope of the original project needs to be expanded.}
 
 \section{Custom Documents (CDs)}
 
-\wss{For CAS 741: State whether the project is a research project. This
-designation, with the approval (or request) of the instructor, can be modified
-over the course of the term.}
+The custom documents chosen for the project are a \textbf{Client Interview Report} and a \textbf{Usability Report}.
 
-\wss{For SE Capstone: List your custom documents (CDs).  Potential CDs include
-usability testing, code walkthroughs, user documentation, formal proof,
-GenderMag personas, Design Thinking, etc.  (The full list is on the course
-outline and in Lecture 02.) Normally the number of CDs will be two (one per
-term).  Approval of the CDs will be part of the discussion with the instructor
-for approving the project. The CDs, with the approval (or request) of the
-instructor, can be modified over the course of the term.}
+The Client Interview Report will document the interviews conducted with users and stakeholders.
+It will summarize the main points and feedback from the interviews and how they helped guide the project.
+
+The Usability Report will document the results of usability testing and the feedback received from users.
+This will include the testing process, results, and discussion.
 
 \newpage{}
 
-\section*{Appendix --- Reflection}
+\section{Appendix --- Reflection}
 
-\wss{Not required for CAS 741}
+% \wss{Not required for CAS 741}
 
-\input{../Reflection.text}
+% \input{../Reflection.text}
 
-\begin{enumerate}
-    \item What went well while writing this deliverable? 
-    \item What pain points did you experience during this deliverable, and how
-    did you resolve them?
-    \item How did you and your team adjust the scope of your goals to ensure
-    they are suitable for a Capstone project (not overly ambitious but also of
-    appropriate complexity for a senior design project)?
-\end{enumerate}  
+% \begin{enumerate}
+%     \item What went well while writing this deliverable? 
+%     \item What pain points did you experience during this deliverable, and how
+%     did you resolve them?
+%     \item How did you and your team adjust the scope of your goals to ensure
+%     they are suitable for a Capstone project (not overly ambitious but also of
+%     appropriate complexity for a senior design project)?
+% \end{enumerate}
+
+\subsection{Mohammad Bilal}
+
+\textbf{What went well while writing this deliverable?}
+
+One thing that went well was that the problem itself was relatively clear to the team.
+The project description gave a good starting point for identifying the main issue and
+explaining why it matters. The team was also able to connect the problem to the clinical
+context and identify the main users and stakeholders involved. Looking into existing research
+also helped support the problem statement with evidence rather than relying only on assumptions
+about children's experiences during ophthalmology appointments. Meeting with the supervisor was
+also helpful in clarifying the project's scope and better understanding the overall vision for the project.
+
+\textbf{What pain points did you experience during this deliverable, and how did you resolve them?}
+
+One of the main challenges was deciding how much detail to include without making the problem
+statement too focused on the implementation. It was easy to start describing specific app features
+instead of focusing on the actual problem being addressed. The team resolved this by going back to
+the purpose of the deliverable and keeping the problem statement focused on the clinical experience,
+the needs of the users, and the overall problem. Another challenge was making sure the goals were
+specific enough to be meaningful while still leaving room for the implementation to change as the project develops.
+
+\subsection{Group Answer(s)}
+
+\textbf{How did you and your team adjust the scope of your goals to ensure they are suitable for a Capstone project?}
+
+
+\bibliographystyle{plain}
+\bibliography{../../refs/References}
 
 \end{document}
